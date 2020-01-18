@@ -1,0 +1,220 @@
+{
+    "editor.formatOnSave": true,
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Consolas",
+    "editor.fontWeight": "500",
+    //"editor.cursorStyle": "block", if this is in the vim cursour change from insert to normal mode does not work.
+    "editor.cursorBlinking": "smooth",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.minimap.enabled": false,
+    "debug.console.fontFamily": "Consolas",
+    "debug.console.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.shell.windows": "c:\\Users\\jeromlu2\\PortableSoftware\\Git\\usr\\bin\\bash.exe",
+    //"terminal.integrated.env.windows": {
+    //"MSYSTEM": "MINGW64",
+    //"MSYS2_PATH_TYPE": "inherit",
+    //"MVSCODE": "1"
+    //},
+    "files.autoSaveDelay": 5000,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "python.formatting.provider": "black",
+    "python.pythonPath": "python",
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=PyQt5",
+        "--disable=all",
+        "--enable=F,E,unreachable,duplicate-key,unnecessary-semicolon,global-variable-not-assigned,unused-variable,binary-op-exception,bad-format-string,anomalous-backslash-in-string,bad-open-mode"
+    ],
+    "python.linting.pylintUseMinimalCheckers": true,
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "zenMode.hideTabs": false,
+    "code-runner.saveFileBeforeRun": false,
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "$pythonPath -u $fullFileName",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "explorer.sortOrder": "type",
+    //vim settings
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.foldfix": true,
+    //<leader><leader> s <char> search character (then similar link as in firefox add on)
+    "vim.easymotion": false,
+    //s<char><char> 	Move forward to the first occurrence of <char><char>
+    "vim.sneak": false,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    //Enable Vim ctrl keys overriding common VS Code operations such as copy, paste, find, etc.
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "space",
+    "vim.handleKeys": {
+        //to use native VS code select all...
+        "<C-a>": false,
+        //to use ctrl+f for find (native VS Code behaviour):
+        "<C-f>": false
+    },
+    //vim keybindings
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "m",
+                "a"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark1"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "b"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark2"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "c"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark3"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "d"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark4"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "e"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark5"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "f"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark6"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "g"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark7"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "h"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark8"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "i"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark9"
+            ]
+        },
+        {
+            "before": [
+                "m",
+                "j"
+            ],
+            "commands": [
+                "numberedBookmarks.toggleBookmark0"
+            ]
+        },
+    ],
+    "latex-workshop.message.update.show": false,
+    "latex-workshop.view.pdf.viewer": "external",
+    // Define LaTeX compiling recipes.
+    // Each recipe in the list is an object containing its name and the names of tools to be used sequentially, which are defined in `latex-workshop.latex.tools`.
+    // By default, the first recipe is used to compile the project. For details, please visit https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#latex-recipe.
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex × 2",
+            "tools": [
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    // Allow bookmarks to be saved (and restored) locally in the opened Project/Folder instead of VS Code
+    "numberedBookmarks.saveBookmarksInProject": false,
+}
