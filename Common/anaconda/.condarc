@@ -1,0 +1,8 @@
+# Additional conda-forge channel, mostly because of CADET package.
+channels:
+  - conda-forge
+  - defaults
+channel_priority: strict
+env_prompt: '(conda-env:{default_env}) '
+# This is mostly necessary because of the NVS restrictions.
+ssl_verify: false
